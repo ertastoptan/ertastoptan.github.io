@@ -116,7 +116,7 @@ function renderProducts(list = data) {
       <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px">
         <div>
           <div class="price">${formatPrice(p.price)}</div>
-          ${p.old ? `<div class="old">${formatPrice(p.old)}</div>` : ''}
+          ${p.old ? `<div class="old">${formatPrice(p.old)}</div>` : '<div class="old"></div>'}
         </div>
         <div class="sold">${p.sold} adet satıldı</div>
       </div>
